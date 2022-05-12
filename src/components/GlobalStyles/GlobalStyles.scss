@@ -2,11 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 :root {
   --primary: red;
+  --black: #000;
+  --text-color: #333;
+  //default layout
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
 }
 html {
   font-size: 62.5%;
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -14,4 +21,15 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  color: var(--text-color);
+}
+button,
+input,
+[tabindex] {
+  border: none;
+  outline: none;
+}
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }
